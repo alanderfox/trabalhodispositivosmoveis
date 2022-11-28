@@ -1,0 +1,19 @@
+<ion-content class="content-container" [fullscreen]="true">
+  <form (ngSubmit)="logForm()">
+
+    <div class="login-content">
+      <ion-label>Usuário</ion-label>
+      <ion-card class="card-content">
+        <ion-input placeholder="usuário" type="text" [(ngModel)]=this.input_login name="login"></ion-input>
+      </ion-card>
+
+      <ion-label>Senha</ion-label>
+      <ion-card class="card-content">
+        <ion-input placeholder="senha" type="" [(ngModel)]=this.input_senha name="senha"></ion-input>
+      </ion-card>
+
+      <ion-button type="submit" color="dark">Enter</ion-button>
+    </div>
+
+  </form>
+</ion-content>

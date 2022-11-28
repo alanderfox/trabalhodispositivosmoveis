@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="header-content">
+    <div style="margin-top: 8px">
+      <p>Nome: {{ this.nome }}</p>
+    </div>
+    
+    <div style="margin-top: 8px">
+      <p>Saldo: {{ this.saldo | currency: 'BRL' }}</p>
+    </div>
+  </div>
+
+  <ion-card class="card-contet" routerLink="/extrato">
+    <p>Ver Página Extrato</p>
+  </ion-card>
+
+  <ion-card class="card-contet" routerLink="/configuracoes">
+    <p>Ver Página Configurações</p>
+  </ion-card>
+
+  <a class="sair" routerLink="/login"> Sair </a>
+
+</ion-content>
+
+
+

@@ -1,0 +1,7 @@
+{
+  "name": "MadsonApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
